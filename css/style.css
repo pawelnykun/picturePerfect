@@ -10,26 +10,10 @@ body {
 	min-width: 400px;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.container-fluid {
-	width: 100%;
-	margin: 0;
-}
-
 section {
 	padding-top: 60px;
 }
 
-.row:before,
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 /* HEADER */
 header {
 	background-image: url("../img/background.jpg");
@@ -117,9 +101,8 @@ header {
 
 .img-phone img {
 	position: absolute;
-	bottom: 0;
-	padding-bottom: 70px;
-	height: 100vh;
+	bottom: -70px;
+	max-height: 100vh;
 }
 /* SECTION GALLERY */
 .gallery {
@@ -346,7 +329,7 @@ header {
 	cursor: pointer;
 }
 
-.buy .col-6 {
+.buy .col-md-6 {
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
@@ -355,15 +338,15 @@ header {
 	height: 500px;
 }
 
-.buy .col-6:hover {
+.buy .col-md-6:hover {
 	box-shadow: 5px 5px 50px 8px #ccc;
 }
 
-.buy .col-6:hover .button-top {
+.buy .col-md-6:hover .button-top {
 	background-color: #bd8cbf;
 }
 
-.buy .col-6:hover .button-bottom:hover {
+.buy .col-md-6:hover .button-bottom:hover {
 	background: #639976;
 	transform: scale(1.1);
 }
@@ -375,7 +358,7 @@ footer {
 	font-size: small;
 }
 
-footer .col-6 {
+footer .col-md-6 {
 	width: 45%;
 }
 
@@ -436,36 +419,6 @@ footer p {
 	padding-top: 15px;
 	color: #959595;
 }
-/* GRID */
-[class*="col-"] {
-	float: left;
-	min-height: 1px;
-}
-
-.col-1 { width: 8.33%; }
-.col-2 { width: 16.66%; }
-.col-3 { width: 25%; }
-.col-4 { width: 33.33%; }
-.col-5 { width: 41.66%; }
-.col-6 { width: 50%; }
-.col-7 { width: 58.33%; }
-.col-8 { width: 66.66%; }
-.col-9 { width: 75%; }
-.col-10 { width: 83.33% }
-.col-11 { width: 91.66% }
-.col-12 { width: 100%; }
-
-.col-offset-1 { margin-left: 8.33%; }
-.col-offset-2 { margin-left: 16.66%; }
-.col-offset-3 { margin-left: 25%; }
-.col-offset-4 { margin-left: 33.33%; }
-.col-offset-5 { margin-left: 41.66%; }
-.col-offset-6 { margin-left: 50%; }
-.col-offset-7 { margin-left: 58.33%; }
-.col-offset-8 { margin-left: 66.66%; }
-.col-offset-9 { margin-left: 75%; }
-.col-offset-10 { margin-left: 81.33%; }
-.col-offset-11 { margin-left: 91.66%; }
 
 /* RWD */
 @media(min-width: 768px) and (max-width: 991px) {
@@ -541,7 +494,7 @@ footer p {
     	padding-bottom: 20px;
     }
 
-    .buy .col-6 {
+    .buy .col-md-6 {
     	height: auto;
     }
 
@@ -554,11 +507,9 @@ footer p {
     	display: block;
     }
 
-    footer .col-6 {
+    footer .col-md-6 {
     	width: 100%;
     }
-
-    
 
     .spam {
     	display: none;
