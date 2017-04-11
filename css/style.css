@@ -275,11 +275,7 @@ header {
 .reasons {
 	background: #82ca9c;
 	color: #fff;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 60vh;
+	min-height: 60vh;
 }
 
 .reasons h2 {
@@ -415,7 +411,7 @@ footer p {
 }
 
 .email {
-	width: 400px;
+	width: 300px;
 	float: left;
 	padding: 10px;
 }
@@ -491,16 +487,17 @@ footer p {
     	margin: 0 40px;
     }
 
-    .img-phone {
-    	
-    }
-
     .s-fix {
     	margin-top: 20px;
     }
 
-    .reasons {
+    .reasons p {
     	padding-bottom: 40px;
+    }
+
+    footer .container {
+    	width: 100%;
+    	padding: 0;
     }
 }
 
@@ -535,6 +532,10 @@ footer p {
     	margin-top: 20px;
     }
 
+    .more-power p {
+    	padding-right: 20px;
+    }
+
     .reasons {
     	height: auto;
     	padding-bottom: 20px;
@@ -557,19 +558,7 @@ footer p {
     	width: 100%;
     }
 
-    .email {
-    	width: 150px;
-    	height: 25px;
-    }
-
-	.email::placeholder {
-		font-size: 10px;
-	}
-
-    .submit {
-    	width: 25px;
-    	height: 25px;
-    }
+    
 
     .spam {
     	display: none;
@@ -578,7 +567,6 @@ footer p {
     .contact {
     	padding-top: 25px;
     }
-
 
 	/* for smartphones */
 	.col-xs-1 {width: 8.33%;}
