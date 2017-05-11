@@ -7,7 +7,6 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-	min-width: 400px;
 }
 
 section {
@@ -237,7 +236,6 @@ header {
 
 .more-power p {
     padding: 4vh 0;
-    width: 500px;
     line-height: 1.5em;
 }
 
@@ -421,23 +419,35 @@ footer p {
 }
 
 /* RWD */
-@media(min-width: 768px) and (max-width: 991px) {
-	/* for tablets */
-	.col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+@media (min-width: 992px) and (max-width: 1199px) {
 
-    .container {
-    	margin: 0 40px;
+	.img-phone img {
+		width: 90%;
+	}
+
+	header .intro p {
+		width: 400px;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+	
+    header .intro {
+    	padding-top: 40%;
+    }
+
+    header .intro h1 {
+    	font-size: 3em;
+    }
+
+    header .intro p {
+    	width: 300px;
+    }
+
+    .img-phone img {
+    	width: 90%;
+    	bottom: -100px;
+    	padding-left: 25px;
     }
 
     .s-fix {
@@ -450,11 +460,11 @@ footer p {
 
     footer .container {
     	width: 100%;
-    	padding: 0;
     }
 }
 
 @media(max-width: 767px) {
+
 	[class*="col-"] {
 		float: left;
 		min-height: 1px;
@@ -483,6 +493,10 @@ footer p {
 
     .m-fix {
     	margin-top: 20px;
+    }
+
+    .more-power h2 {
+    	padding-top: 220px;
     }
 
     .more-power p {
@@ -519,17 +533,7 @@ footer p {
     	padding-top: 25px;
     }
 
-	/* for smartphones */
-	.col-xs-1 {width: 8.33%;}
-    .col-xs-2 {width: 16.66%;}
-    .col-xs-3 {width: 25%;}
-    .col-xs-4 {width: 33.33%;}
-    .col-xs-5 {width: 41.66%;}
-    .col-xs-6 {width: 50%;}
-    .col-xs-7 {width: 58.33%;}
-    .col-xs-8 {width: 66.66%;}
-    .col-xs-9 {width: 75%;}
-    .col-xs-10 {width: 83.33%;}
-    .col-xs-11 {width: 91.66%;}
-    .col-xs-12 {width: 100%;}
+    .email {
+    	width: 180px;
+    }
 }
